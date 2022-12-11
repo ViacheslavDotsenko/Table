@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    bottom: 0;
+    font-weight: 700;
+    height: 100%;
+    border: 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.weighable_agroCulture,
+.weighable_data,
+.weighable_destination,
+.weighable_for_today {
+padding: 0.5em 1em;
+margin-top: 5px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.btn {
+    position: relative;
+    width: 5em;
+    height: 5em;    
+    border: 1px solid #00400A;
+    border-radius: 5px;
+    background: #00400A;
+}
+
+.weighable_btn::after,
+.weighable_btn::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    border-radius: 2px;
+    width: 50%;
+    height: 5px; 
+    left: 25%;
+    top: 50%;   
+}
+
+.weighable_btn::after {
+    transform: rotate(90deg);   
+}
+
+
+
+/*--------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th,td{
+    border: 1px solid grey;
+    text-align:center;
+    padding: 0.4em 0;
+} 
